@@ -1,10 +1,7 @@
 {
   "employee": [
     {
-      "id": 1,
-      "name": "eunsu",
-      "email": "kes@react.com",
-      "phone": "12345678"
+      "id": 1
     },
     {
       "name": "dd",

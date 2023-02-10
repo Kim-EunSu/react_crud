@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Employee from "./routes/Employee";
 import Create from "./components/Create";
 import Detail from "./components/Detail";
-import Delete from "./components/Delete";
+import Edit from "./components/Edit";
 import styled from "styled-components";
 
 const Title = styled.h1`

@@ -47,7 +47,7 @@ const Btn = styled.button`
 `;
 
 function Create() {
-  const [id, setId] = useState("");
+  const [Id, setId] = useState("");
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -81,7 +81,7 @@ function Create() {
       <FormGroup onSubmit={handleSubmit}>
         <Form>
           <Label>Id</Label>
-          <Input defaultValue={id} disabled></Input>
+          <Input defaultValue={Id} disabled></Input>
         </Form>
         <Form>
           <Label>Name</Label>
