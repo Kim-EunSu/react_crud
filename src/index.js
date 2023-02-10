@@ -66,7 +66,6 @@ const GlobalStyle = createGlobalStyle`
  font-family: 'Source Sans Pro', sans-serif;;
   }
   a{
-    color: white;
     text-decoration: none;
   }
   

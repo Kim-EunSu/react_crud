@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -65,6 +65,18 @@ const Btn = styled.button`
 function Employee() {
   const [data, setData] = useState(null);
 
+  const navigate = useNavigate();
+
+  const EditBtn = (id) => {
+    navigate("employee/edit/" + id);
+  };
+
+  const RemoveBtn = (id) => {};
+
+  const DetailBtn = (id) => {
+    navigate("employee/detail/" + id);
+  };
+
   useEffect(() => {
     fetch("http://localhost:3001/employee")
       .then((res) => {
@@ -100,9 +112,27 @@ function Employee() {
                 <TBody>{data.email}</TBody>
                 <TBody>{data.phone}</TBody>
                 <TBody>
-                  <Btn>Edit</Btn>
-                  <Btn>Remove</Btn>
-                  <Btn>Details</Btn>
+                  <Btn
+                    onClick={() => {
+                      EditBtn(data.id);
+                    }}
+                  >
+                    Edit
+                  </Btn>
+                  <Btn
+                    onClick={() => {
+                      RemoveBtn(data.id);
+                    }}
+                  >
+                    Remove
+                  </Btn>
+                  <Btn
+                    onClick={() => {
+                      DetailBtn(data.id);
+                    }}
+                  >
+                    Details
+                  </Btn>
                 </TBody>
               </>
             ))}
