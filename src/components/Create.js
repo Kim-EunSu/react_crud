@@ -96,7 +96,7 @@ function Create() {
           <Input
             defaultValue={email}
             required
-            onChange={(e) => setEmail(e.target.email)}
+            onChange={(e) => setEmail(e.target.value)}
           ></Input>
         </Form>
         <Form>
@@ -104,7 +104,7 @@ function Create() {
           <Input
             defaultValue={phone}
             required
-            onChange={(e) => setPhone(e.target.phone)}
+            onChange={(e) => setPhone(e.target.value)}
           ></Input>
         </Form>
         <Form>

@@ -1,41 +1,11 @@
 {
   "employee": [
     {
-      "id": 1
-    },
-    {
-      "name": "dd",
-      "active": true,
-      "id": 2
-    },
-    {
-      "name": "dd",
-      "active": true,
-      "id": 3
-    },
-    {
-      "name": "dd",
-      "active": true,
-      "id": 4
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "active": true,
-      "id": 5
-    },
-    {
-      "name": "aa",
-      "active": true,
-      "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "phone": "",
-      "active": true,
-      "id": 7
+      "id": 6,
+      "name": "aaappp",
+      "email": "llll",
+      "phone": "lmlmlm",
+      "active": true
     }
   ]
 }

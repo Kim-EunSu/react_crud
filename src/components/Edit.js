@@ -78,9 +78,9 @@ function Edit() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const data = { name, email, phone, active };
+    const data = { id, name, email, phone, active };
 
-    fetch("http://localhost:3001/employee", {
+    fetch("http://localhost:3001/employee/" + id, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

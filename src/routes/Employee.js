@@ -71,7 +71,20 @@ function Employee() {
     navigate("employee/edit/" + id);
   };
 
-  const RemoveBtn = (id) => {};
+  const RemoveBtn = (id) => {
+    if (window.confirm("Do you want remove?")) {
+      fetch("http://localhost:3001/employee/" + id, {
+        method: "DELETE",
+      })
+        .then((res) => {
+          alert("Remove Success");
+          window.location.reload();
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
+    }
+  };
 
   const DetailBtn = (id) => {
     navigate("employee/detail/" + id);
